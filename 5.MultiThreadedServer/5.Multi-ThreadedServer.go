@@ -32,7 +32,7 @@ func main() {
 					break
 				}
 
-				conn.Write([]byte("Hello, " + name))
+				conn.Write([]byte(fmt.Sprintf("Hello, %s", name)))
 			}
 		}()
 	}
